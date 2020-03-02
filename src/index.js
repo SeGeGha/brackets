@@ -17,7 +17,6 @@ module.exports = function check(str, bracketsConfig) {
         }
     }
     reg = new RegExp(reg.join('|'), 'g')
-    console.log(reg);
     while ( s != str ) { 
         s = str;
         str = str.replace(reg, '')
